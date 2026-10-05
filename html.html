@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodly - Quote & Motivation Generator</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Judul website -->
+        <header>
+            <h1>✨ MOODLY ✨</h1>
+            <p>Quote & Motivation Generator</p>
+        </header>
+
+        <!-- Pilihan kategori -->
+        <div class="category-section">
+            <label for="category">Pilih Kategori:</label>
+
+            <select id="category">
+                <option value="Motivasi">Motivasi</option>
+                <option value="Belajar">Belajar</option>
+                <option value="Kehidupan">Kehidupan</option>
+                <option value="Percintaan">Percintaan</option>
+                <option value="Persahabatan">Persahabatan</option>
+            </select>
+        </div>
+
+        <!-- Card quote -->
+        <div class="quote-card">
+
+            <div class="quote-icon">❝</div>
+
+            <p id="quote">
+                "Jangan takut untuk memulai sesuatu yang baru."
+            </p>
+
+            <span id="category-name">Motivasi</span>
+
+        </div>
+
+        <!-- Tombol -->
+        <div class="button-container">
+
+            <button id="new-quote">
+                ✨ Quote Baru
+            </button>
+
+            <button id="copy-quote">
+                📋 Copy
+            </button>
+
+        </div>
+
+        <!-- Notifikasi -->
+        <div id="notification">
+            Quote berhasil disalin! ✓
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with 💜 using HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

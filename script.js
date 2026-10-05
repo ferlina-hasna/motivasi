@@ -1,0 +1,226 @@
+```css
+/* Mengatur tampilan seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan body */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    /* Background pastel */
+    background: linear-gradient(135deg, #fce4ec, #e8eaf6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Container utama */
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+/* Bagian judul */
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #6a5acd;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+    font-size: 17px;
+}
+
+/* Bagian kategori */
+.category-section {
+    margin-bottom: 20px;
+}
+
+.category-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+#category {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: white;
+    color: #555;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Card quote */
+.quote-card {
+    background-color: rgba(255, 255, 255, 0.95);
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 25px;
+}
+
+/* Icon tanda kutip */
+.quote-icon {
+    font-size: 50px;
+    color: #b39ddb;
+
+    line-height: 40px;
+
+    margin-bottom: 15px;
+}
+
+/* Isi quote */
+#quote {
+    font-size: 22px;
+    line-height: 1.6;
+
+    color: #444;
+
+    margin-bottom: 20px;
+}
+
+/* Nama kategori */
+#category-name {
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    border-radius: 20px;
+
+    background-color: #ede7f6;
+    color: #6a5acd;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Container tombol */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+/* Tampilan semua tombol */
+button {
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* Tombol Quote Baru */
+#new-quote {
+    background-color: #8e7cc3;
+    color: white;
+}
+
+/* Tombol Copy */
+#copy-quote {
+    background-color: white;
+    color: #6a5acd;
+
+    border: 2px solid #b39ddb;
+}
+
+/* Efek ketika mouse diarahkan ke tombol */
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Notifikasi */
+#notification {
+    display: none;
+
+    background-color: #dcedc8;
+    color: #558b2f;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    margin: 0 auto 20px;
+
+    width: fit-content;
+
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    color: #777;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* Tampilan untuk HP */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .quote-card {
+        padding: 30px 20px;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+```
